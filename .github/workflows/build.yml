@@ -12,7 +12,7 @@ jobs:
     name: Build Project
     runs-on: ubuntu-latest
     steps:
-    - run: echo "🍏 Job #1: Build Project"
+    - run: echo "Job 1: Build Project"
     - uses: actions/checkout@v2
     - name: Set up JDK 11
       uses: actions/setup-java@v2
@@ -24,7 +24,7 @@ jobs:
     name: Test with Maven
     runs-on: ubuntu-latest
     steps:
-      - run: echo "🍏 Job #2: Test Project"
+      - run: echo "Job 2: Test Project"
       - run: mvn -B package --file pom.xml
       - name: Publish Unit Test Results
         uses: mikepenz/action-junit-report@v2
@@ -35,7 +35,7 @@ jobs:
     name: Lint Code
     runs-on: ubuntu-latest
     steps:
-      - run: echo "🍏 Job #3: Lint Project"
+      - run: echo "Job 3: Lint Project"
       - name: Run java checkstyle
         uses: nikitasavinov/checkstyle-action@0.4.0
         with:
@@ -44,6 +44,6 @@ jobs:
     name: The End
     runs-on: ubuntu-latest
     steps:
-      - run: echo "🍏 Job #5: Report Status of this job"
-      - run: echo "🍏 This job's status is ${{ job.status }}."
+      - run: echo "Job 5: Report Status of this job"
+      - run: echo "This job's status is ${{ job.status }}."
 

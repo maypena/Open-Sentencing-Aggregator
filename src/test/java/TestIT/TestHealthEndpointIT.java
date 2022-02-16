@@ -1,4 +1,4 @@
-package it;
+package TestIT;
 
 import static org.junit.Assert.assertTrue;
 
@@ -9,7 +9,7 @@ import javax.ws.rs.core.Response;
 
 import org.junit.Test;
 
-public class HealthEndpointIT {
+public class TestHealthEndpointIT {
 
     private String port = System.getProperty("liberty.test.port");
     private String endpoint = "/v1/health";

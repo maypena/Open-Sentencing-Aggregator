@@ -242,13 +242,13 @@ spec:
                     mkdir -p ~/.npm
                     npm config set prefix ~/.npm
                     export PATH=$PATH:~/.npm/bin
-                    npm i -g release-it
+                    npm i -g release-TestIT
 
                     if [[ "${BRANCH}" != "master" ]]; then
                         PRE_RELEASE="--preRelease=${BRANCH}"
                     fi
 
-                    release-it patch ${PRE_RELEASE} \
+                    release-TestIT patch ${PRE_RELEASE} \
                       --ci \
                       --no-npm \
                       --no-git.push \
@@ -406,7 +406,7 @@ spec:
                 # Package Helm Chart
                 helm package --version ${IMAGE_VERSION} ${CHART_ROOT}/${IMAGE_NAME}
 
-                # Get the index and re index it with current Helm Chart
+                # Get the index and re index TestIT with current Helm Chart
                 curl -u${ARTIFACTORY_USER}:${ARTIFACTORY_ENCRYPT} -O "${URL}/${REGISTRY_NAMESPACE}/index.yaml"
 
                 if [[ $(cat index.yaml | jq '.errors[0].status') != "404" ]]; then
@@ -447,7 +447,7 @@ spec:
 
                     . ./env-config
 
-                    # This email is not used and is not valid, you can ignore but git requires it
+                    # This email is not used and is not valid, you can ignore but git requires TestIT
                     git config --global user.email "jenkins@ibmcloud.com"
                     git config --global user.name "Jenkins Pipeline"
 

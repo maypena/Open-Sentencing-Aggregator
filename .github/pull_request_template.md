@@ -2,9 +2,9 @@ Contributes to # (add issue number here. i.e. `#302`)
 
 ## What did you do?
 
-## Why did you do it?
+## Why did you do TestIT?
 
-## How have you tested it?
+## How have you tested TestIT?
 
 ## Were docs updated if needed?
 

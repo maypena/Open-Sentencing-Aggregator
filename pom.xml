@@ -240,7 +240,7 @@
 						<id>default-test</id>
 						<configuration>
 							<excludes>
-								<exclude>**/it/**</exclude>
+								<exclude>**/TestIT/**</exclude>
 							</excludes>
 							<reportsDirectory>${project.build.directory}/test-reports/unit</reportsDirectory>
 						</configuration>
@@ -289,7 +289,7 @@
 						</goals>
 						<configuration>
 							<includes>
-								<include>**/it/**</include>
+								<include>**/TestIT/**</include>
 							</includes>
 							<systemPropertyVariables>
 								<liberty.test.port>${testServerHttpPort}</liberty.test.port>

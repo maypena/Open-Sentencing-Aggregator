@@ -8,7 +8,7 @@ Then install selenium.
 ```bash
 pip install selenium
 ```
-[Set up the Chrome WebDriver](https://chromedriver.chromium.org/getting-started) on your system, you will also need to install the [Chrome Browser](https://www.google.com/chrome/) if you do not have it. If you prefer, you can update the experience test script, experience_test.py, to use the [Firefox WebDriver](https://developer.mozilla.org/en-US/docs/Web/WebDriver). Make sure that you have added the driver to your system PATH.
+[Set up the Chrome WebDriver](https://chromedriver.chromium.org/getting-started) on your system, you will also need to install the [Chrome Browser](https://www.google.com/chrome/) if you do not have TestIT. If you prefer, you can update the experience test script, experience_test.py, to use the [Firefox WebDriver](https://developer.mozilla.org/en-US/docs/Web/WebDriver). Make sure that you have added the driver to your system PATH.
 
 With the application running locally, export the necessary environment variables, and run the Python web experience test in this directory.
 ```bash

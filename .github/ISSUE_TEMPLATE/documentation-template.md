@@ -12,7 +12,7 @@ assignees: ''
 - [ ] Fix current documentation (errors)
 
 **Background**
-Explain the need for new documentation. What problem does it solve? 
+Explain the need for new documentation. What problem does TestIT solve? 
 
 **Suggested Solution**
 Explain the proposed documentation update

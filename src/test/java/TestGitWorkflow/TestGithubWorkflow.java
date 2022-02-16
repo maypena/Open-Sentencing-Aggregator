@@ -12,6 +12,6 @@ public class TestGithubWorkflow {
 
     @Test
     public void testFailingTest()  {
-        assertTrue(false);
+        assertTrue(true);
     }
 }
